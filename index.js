@@ -75,44 +75,48 @@ const basicQuestions = () => {
           value:
             "[![License](https://img.shields.io/badge/License-EPL_1.0-red.svg)](https://opensource.org/licenses/EPL-1.0)<br/>",
         },
+        {
+          name: "GNU GPL v3",
+          value:
+            "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)<br/>",
+        },
+        {
+          name: "The Hippocratic License 3.0",
+          value:
+            "[![License: Hippocratic 3.0](https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg)](https://firstdonoharm.dev)<br/>",
+        },
       ],
     },
     {
       type: "input",
       name: "contrib",
-      message: "Who contributed to the project?",
+      message: "Name the contributors, separated by commas!",
     },
   ]);
 };
 
 const textarea = "```";
-const gnu =
-  "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
-const hipp =
-  "[![License: Hippocratic 3.0](https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg)](https://firstdonoharm.dev)";
-const ibm =
+IBM Public License Version 1.0
   "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)";
-const isc =
+  ISC License (ISC)
   "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
-const mit =
-  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-const mozilla =
+  The MIT License
+"[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+Mozilla Public License 2.0
   "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
-const open =
-  "[![License: Open Data Commons Attribution](https://img.shields.io/badge/License-ODC_BY-brightgreen.svg)](https://opendatacommons.org/licenses/by/";
-const public =
+  Public Domain
   "[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)";
-const perl =
+  The Perl License
   "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)";
-const art =
+  The Artistic License 2.0
   "[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)";
-const sil =
+  SIL Open Font License 1.1
   "[![License: Open Font-1.1](https://img.shields.io/badge/License-OFL_1.1-lightgreen.svg)](https://opensource.org/licenses/OFL-1.1)";
-const unlicense =
+  The Unlicense
   "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
-const wtf =
+  The Do What the Fuck You Want to Public License
   "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
-const zlib =
+  The zlib/libpng License
   "[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)";
 
 const readmeGenerator = ({
@@ -157,10 +161,10 @@ ${textarea}
 ${license}
 
 ## Contributing
-${contrib}
+App works thanks to ${contrib}
 
 ## Testing
-${tests}
+${tests} tested the app.
 
 ## FAQ
 

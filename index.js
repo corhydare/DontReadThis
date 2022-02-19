@@ -27,7 +27,7 @@ const basicQuestions = () => {
     {
       type: "input",
       name: "github",
-      message: "Enter your github profile URL:",
+      message: "Enter your github username",
     },
     {
       type: "input",
@@ -85,39 +85,77 @@ const basicQuestions = () => {
           value:
             "[![License: Hippocratic 3.0](https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg)](https://firstdonoharm.dev)<br/>",
         },
+        {
+          name: "IBM Public License Version 1.0",
+          value:
+            "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)<br/>",
+        },
+        {
+          name: "ISC License (ISC)",
+          value:
+            "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)<br/>",
+        },
+        {
+          name: "The MIT License",
+          value:
+            "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br/>",
+        },
+        {
+          name: "Mozilla Public License 2.0",
+          value:
+            "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)<br/>",
+        },
+        {
+          name: "Public Domain",
+          value:
+            "[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)<br/>",
+        },
+        {
+          name: "The Perl License",
+          value:
+            "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)<br/>",
+        },
+        {
+          name: "The Artistic License 2.0",
+          value:
+            "[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)<br/>",
+        },
+        {
+          name: "SIL Open Font License 1.1",
+          value:
+            "[![License: Open Font-1.1](https://img.shields.io/badge/License-OFL_1.1-lightgreen.svg)](https://opensource.org/licenses/OFL-1.1)<br/>",
+        },
+        {
+          name: "The Unlicense",
+          value:
+            "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)<br/>",
+        },
+        {
+          name: "The Do What the Fuck You Want to Public License",
+          value:
+            "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)<br/>",
+        },
+        {
+          name: "The zlib/libpng License",
+          value:
+            "[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)<br/>",
+        },
       ],
     },
     {
       type: "input",
       name: "contrib",
-      message: "Name the contributors, separated by commas!",
+      message: "Name the contributors to this project",
+    },
+    {
+      type: "input",
+      name: "tests",
+      message: "Who tested this code?",
     },
   ]);
 };
 
 const textarea = "```";
-IBM Public License Version 1.0
-  "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)";
-  ISC License (ISC)
-  "[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)";
-  The MIT License
-"[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
-Mozilla Public License 2.0
-  "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
-  Public Domain
-  "[![License: ODbL](https://img.shields.io/badge/License-PDDL-brightgreen.svg)](https://opendatacommons.org/licenses/pddl/)";
-  The Perl License
-  "[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)";
-  The Artistic License 2.0
-  "[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)";
-  SIL Open Font License 1.1
-  "[![License: Open Font-1.1](https://img.shields.io/badge/License-OFL_1.1-lightgreen.svg)](https://opensource.org/licenses/OFL-1.1)";
-  The Unlicense
-  "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)";
-  The Do What the Fuck You Want to Public License
-  "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
-  The zlib/libpng License
-  "[![License: Zlib](https://img.shields.io/badge/License-Zlib-lightgrey.svg)](https://opensource.org/licenses/Zlib)";
 
 const readmeGenerator = ({
   title,
@@ -145,6 +183,7 @@ const readmeGenerator = ({
 - [Usage](#usage)
 - [Licenses](#licenses)
 - [Contributing](#contributing)
+- [Testing](#testing)
 - [FAQ](#faq)
 
 ## Installation Instructions
@@ -168,26 +207,16 @@ ${tests} tested the app.
 
 ## FAQ
 
-For questions you may use my email [${email}](${email}) :thinking:
+For questions you may contact me at [${email}](${email}) :thinking:
 
-In the meantime you can take a look at my [GitHub Profile](${github}) :smirk:
-
-##
-
-
+In the meantime you can take a look at my [GitHub Profile](https://github.com/${github}) :smirk:
+[Tis I, the author](https://img.shields.io/badge/https://github.com/${github}.png)
   `;
 
 const pressStart = () => {
   basicQuestions()
-    .then((answers) =>
-      fs.writeFileSync("DONTREADME.md", readmeGenerator(answers))
-    )
-    .then(() =>
-      console.log(
-        "%c Your masterful README file has been generated!",
-        "color:yellow"
-      )
-    )
+    .then((answers) => fs.writeFileSync("README.md", readmeGenerator(answers)))
+    .then(() => console.log("Your masterful README file has been generated!"))
     .catch((err) => console.error(err));
 };
 

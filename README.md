@@ -27,7 +27,7 @@ Just run in the terminal
 ```
 
 ## Licenses
-[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)<br/>
+![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)<br/>
 
 ## Contributing
 App works thanks to Danila
@@ -40,5 +40,5 @@ Danila tested the app.
 For questions you may contact me at [dan@dan.dan](dan@dan.dan) :thinking:
 
 In the meantime you can take a look at my [GitHub Profile](https://github.com/corhydare) :smirk:
-[![Tis I, the author](https://github.com/corhydare.png?size=200)]
+![Tis I, the author](https://github.com/corhydare.png?size=200)
   

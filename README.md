@@ -27,7 +27,7 @@ Just run in the terminal
 ```
 
 ## Licenses
-![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)<br/>
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)<br/>
 
 ## Contributing
 App works thanks to Danila

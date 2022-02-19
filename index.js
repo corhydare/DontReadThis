@@ -210,7 +210,7 @@ ${tests} tested the app.
 For questions you may contact me at [${email}](${email}) :thinking:
 
 In the meantime you can take a look at my [GitHub Profile](https://github.com/${github}) :smirk:
-[![Tis I, the author](https://github.com/${github}.png?size=200)]
+[![Tis I, the author](https://github.com/${github}.png?size=200)](https://github.com/${github})
   `;
 
 const pressStart = () => {

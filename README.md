@@ -7,7 +7,7 @@
   ```
 
 ## Table of Contents:
-- [Title](#Dont Read This)
+- [Title](#Dont%20Read%20This)
   * [Description](#description)
 - [Installation Instructions](#installation%20instructions)
 - [Usage](#usage)

@@ -216,7 +216,7 @@ ${textarea}
 
 #### Video
 
-./${video}
+https://github.com/corhydare/DontReadThis/blob/main/${video}
 
 ## Licenses
 ${license}

@@ -37,7 +37,10 @@ To properly use this generator through console/terminal you must have Node.js in
 
 #### Video
 
-https://github.com/corhydare/DontReadThis/blob/main/demo.mp4
+
+
+https://user-images.githubusercontent.com/57278348/155059507-4588a64f-9c19-47e2-9c34-f70685e243d2.mp4
+
 
 
 

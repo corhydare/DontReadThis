@@ -28,16 +28,16 @@ Run index.js through Node.js
 ## Usage
 
 ```
-To proper;ly use this generator through console/terminal you must have Node.js installed. Then simply run index.js and follow prompts.
+To properly use this generator through console/terminal you must have Node.js installed. Then simply run index.js and follow prompts.
 ```
 
 #### Screenshot
 
-[screenshot](./img/screen.png)
+![screenshot](./img/screen.png)
 
 #### Video
 
-demo.mkv
+demo.mp4
 
 ## Licenses
 

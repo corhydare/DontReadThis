@@ -212,11 +212,11 @@ ${textarea}
 
 #### Screenshot
 
-[screenshot](./img/${img})
+![screenshot](./img/${img})
 
 #### Video
 
-${video}
+./${video}
 
 ## Licenses
 ${license}

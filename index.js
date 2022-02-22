@@ -152,6 +152,16 @@ const basicQuestions = () => {
       name: "tests",
       message: "Who tested this code?",
     },
+    {
+      type: "input",
+      name: "img",
+      message: "What is your screenshot filename?",
+    },
+    {
+      type: "input",
+      name: "video",
+      message: "Enter a link for your demo video clip:",
+    },
   ]);
 };
 
@@ -167,6 +177,8 @@ const readmeGenerator = ({
   github,
   email,
   tests,
+  img,
+  video,
 }) =>
   `
 # ${title}
@@ -181,6 +193,8 @@ const readmeGenerator = ({
   * [Description](#description)
 - [Installation Instructions](#installation%20instructions)
 - [Usage](#usage)
+  * [Screenshot](#screenshot)
+  * [Video](#video)
 - [Licenses](#licenses)
 - [Contributing](#contributing)
 - [Testing](#testing)
@@ -195,6 +209,14 @@ ${textarea}
 ${textarea}
 ${used}
 ${textarea}
+
+#### Screenshot
+
+[screenshot](./img/${img})
+
+#### Video
+
+${video}
 
 ## Licenses
 ${license}

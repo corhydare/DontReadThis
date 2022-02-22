@@ -37,7 +37,7 @@ To properly use this generator through console/terminal you must have Node.js in
 
 #### Video
 
-![](./demo.mkv)
+!./demo.mkv
 
 ## Licenses
 

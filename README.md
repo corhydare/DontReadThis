@@ -37,9 +37,7 @@ To properly use this generator through console/terminal you must have Node.js in
 
 #### Video
 
-![](demo.mp4)
-
-https://user-images.githubusercontent.com/57278348/155059201-c27a62ef-0c0f-449e-8933-10b5928695d1.mp4
+https://github.com/corhydare/DontReadThis/blob/main/demo.mkv
 
 
 

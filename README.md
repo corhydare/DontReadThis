@@ -39,6 +39,10 @@ To properly use this generator through console/terminal you must have Node.js in
 
 ![](demo.mp4)
 
+https://user-images.githubusercontent.com/57278348/155059201-c27a62ef-0c0f-449e-8933-10b5928695d1.mp4
+
+
+
 ## Licenses
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)<br/>,[![License: Hippocratic 3.0](https://img.shields.io/badge/License-Hippocratic_3.0-lightgrey.svg)](https://firstdonoharm.dev)<br/>,[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)<br/>,[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)<br/>
